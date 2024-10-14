@@ -25,43 +25,40 @@
 
     <!-- Current Location -->
 
-    <div id="Location">
-
+    <div id="Location" class="Location">
+        <h1 id="Location header"></h1>
+        <p id="Location text"></p>
+        <img id="Location image">
     </div>
 </body>
 </html>
 
 <script>
-    const pages = [
-    {"start": 0, "end": 9, "page": `C:\Users\Ellio\OneDrive\Desktop\Coding\Web page design\webweb\Locations\Dinosaur.html`},
-    {"start": 9, "end": 23, "page": `C:\Users\Ellio\OneDrive\Desktop\Coding\Web page design\webweb\Locations\Caveman.html`},
-    ]
-    let fr = new FileReader();
-
     function Update() {
         const value = document.getElementById("slider").value;
 
         pages.forEach(page => {
             if (value > page["start"] && value < page["end"]) {
-
-                document.getElementById("Location").innerHTML = openFile(page["page"]);
+                document.getElementById("Location header").innerHTML = page["header"];
+                document.getElementById("Location text").innerHTML = page["text"];
+                document.getElementById("Location header").innerHTML = page["header"];
             }
         });
     }
 
-    function openFile(fileName) {
-    fetch(fileName)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text(); // or response.json() for JSON files
-        })
-        .then(data => {
-            console.log(data); // Handle the file content here
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
-}
+    const pages = [
+        {
+            "start": 0, 
+            "end": 50, 
+            "header": "Talking with a Caveman",
+            "text": "Caveman text"
+
+        },
+        {
+            "start": 50, 
+            "end": 100, 
+            "header": "Roaming with the Dinosaurs",
+            "text": "Dinosaur text"
+        },
+    ]
 </script>

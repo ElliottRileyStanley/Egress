@@ -94,3 +94,21 @@ h2 {
     height: 2rem;
     width: 1rem;
 }
+
+.Location h1 {
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.Location p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(184, 184, 184);
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+}
