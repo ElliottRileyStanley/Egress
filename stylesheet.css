@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    font-family: Franklin Gothic Medium;
+    margin: 0px;
+}
+
+hr {
+    margin: 0px;
+    border-bottom: solid rgb(255, 255, 255);
+}
+
+nav {
+    line-height: 50px;
+    display: flex; 
+    align-items: center;
+}
+
+nav a:not(.home) {
+    font-size: 25px;
+    color: rgb(255, 120, 0);
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px
+}
+
+nav a:not(.home):hover {
+    color: rgb(0, 160, 255);
+}
+
+nav a.home {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 8px;
+    align-items:center
+}
+
+nav a.home img {
+    display: flex; 
+    align-items: center;
+    width: 25px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 150px;
+}
+
+h2 {
+    color:white;
+    margin: 10px;
+    margin-top: 0px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.slider {
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.slider input {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+}
+
+.slider input::-webkit-slider-runnable-track {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right,
+    rgb(64, 82, 71) 0%, rgb(64, 82, 71) 8%, /* Dinosours (joke about how kids love incredibly horrifying monsters) */
+    rgb(99, 50, 26) 10%, rgb(99, 50, 26) 22%, /* Invention of fire or last remaining caveman (both about the previous generation complaining about the new, wanting to go back to the caves) */
+    rgb(100, 175, 224) 24%, rgb(100, 175, 224) 38%, /* Meet famous philosopher (turns out to be kind of similar to semi-racist white dudes of present day) */
+    rgb(255, 79, 35) 40%, rgb(255, 79, 35) 46%, /* Salem Witch Trials (it turns out, they were actually witches. However, they were incredibly nice and just tried to help out) */
+    rgb(255, 0, 0) 48%, rgb(255, 0, 0) 52% /* You get to go back in time and see if you could stop 9/11 (About the whole "people make too many jokes about 9/11 thing" and the general comedy based on wars dilemma) */
+    );
+    height: 0.5rem;
+}
+
+.slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: e-resize;
+    margin-top: -12px;
+    background-color: rgb(130, 130, 130);
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 5px 5px 5px 5px;
+    height: 2rem;
+    width: 1rem;
+}

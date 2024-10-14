@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+</head>
+<body>
+    <!-- Navbar -->
+    
+    <nav>
+        <a class="home" href="index.html"><img src="Small logo.png"></a>
+        <a href="locations.html">Locations</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+    <hr style="border-bottom-width:3px; ">
+
+    <!-- Location Slider -->
+    
+    <div class="slider">
+        <input id="slider" type="range" min="0" max="100" step="0.01" oninput="Update()">
+    </div>
+    <hr style="border-bottom-width: 2px;">
+
+    <!-- Current Location -->
+
+    <div id="Location">
+
+    </div>
+</body>
+</html>
+
+<script>
+    const pages = [
+    {"start": 0, "end": 9, "page": `C:\Users\Ellio\OneDrive\Desktop\Coding\Web page design\webweb\Locations\Dinosaur.html`},
+    {"start": 9, "end": 23, "page": `C:\Users\Ellio\OneDrive\Desktop\Coding\Web page design\webweb\Locations\Caveman.html`},
+    ]
+    let fr = new FileReader();
+
+    function Update() {
+        const value = document.getElementById("slider").value;
+
+        pages.forEach(page => {
+            if (value > page["start"] && value < page["end"]) {
+
+                document.getElementById("Location").innerHTML = openFile(page["page"]);
+            }
+        });
+    }
+
+    function openFile(fileName) {
+    fetch(fileName)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text(); // or response.json() for JSON files
+        })
+        .then(data => {
+            console.log(data); // Handle the file content here
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+}
+</script>
