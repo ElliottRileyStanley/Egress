@@ -74,8 +74,8 @@ h2 {
     margin-top: 15px;
     margin-bottom: 15px;
     background: linear-gradient(to right,
-    rgb(64, 82, 71) 0%, rgb(64, 82, 71) 8%, /* Dinosours (joke about how kids love incredibly horrifying monsters) */
-    rgb(99, 50, 26) 10%, rgb(99, 50, 26) 22%, /* Invention of fire or last remaining caveman (both about the previous generation complaining about the new, wanting to go back to the caves) */
+    rgb(99, 50, 26) 0%, rgb(90, 50, 26) 8%, /* Dinosours (joke about how kids love incredibly horrifying monsters) */
+    rgb(64, 82, 71) 10%, rgb(64, 82, 71) 22%, /* Invention of fire or last remaining caveman (both about the previous generation complaining about the new, wanting to go back to the caves) */
     rgb(100, 175, 224) 24%, rgb(100, 175, 224) 38%, /* Meet famous philosopher (turns out to be kind of similar to semi-racist white dudes of present day) */
     rgb(255, 79, 35) 40%, rgb(255, 79, 35) 46%, /* Salem Witch Trials (it turns out, they were actually witches. However, they were incredibly nice and just tried to help out) */
     rgb(122, 29, 0) 48%, rgb(122, 29, 0) 52%, /* You get to go back in time and see if you could stop 9/11 (About the whole "people make too many jokes about 9/11 thing" and the general comedy based on wars debate) */
@@ -110,10 +110,22 @@ h2 {
     text-align: center;
 }
 
+.Location h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(184, 184, 184);
+    margin: 0px;
+    position: relative;
+    bottom: 2px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
 .Location p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(184, 184, 184);
     margin: 0px;
+    margin-top: 20px;
     font-size: 20px;
     display: inline-block;
     vertical-align: top;
@@ -122,6 +134,7 @@ h2 {
 }
 
 .Location img {
+    margin-top: 20px;
     width: 35%;
     max-width: 600px;
     display: inline;
