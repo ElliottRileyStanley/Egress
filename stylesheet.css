@@ -111,7 +111,7 @@ h2 {
 }
 
 .Location p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(184, 184, 184);
     margin: 0px;
     font-size: 20px;
@@ -123,4 +123,27 @@ h2 {
 .Location img {
     width: 35%;
     display: inline;
+}
+
+.Question h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(150, 150, 150);
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 15px;
+    vertical-align: top;
+}
+
+.Question p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(230, 230, 230);
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    vertical-align: top;
+}
+
+.Question hr {
+    border-bottom-width: 1px;
+    color: rgb(150, 150, 150);
 }
