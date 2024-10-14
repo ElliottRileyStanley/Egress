@@ -78,7 +78,11 @@ h2 {
     rgb(99, 50, 26) 10%, rgb(99, 50, 26) 22%, /* Invention of fire or last remaining caveman (both about the previous generation complaining about the new, wanting to go back to the caves) */
     rgb(100, 175, 224) 24%, rgb(100, 175, 224) 38%, /* Meet famous philosopher (turns out to be kind of similar to semi-racist white dudes of present day) */
     rgb(255, 79, 35) 40%, rgb(255, 79, 35) 46%, /* Salem Witch Trials (it turns out, they were actually witches. However, they were incredibly nice and just tried to help out) */
-    rgb(255, 0, 0) 48%, rgb(255, 0, 0) 52% /* You get to go back in time and see if you could stop 9/11 (About the whole "people make too many jokes about 9/11 thing" and the general comedy based on wars dilemma) */
+    rgb(122, 29, 0) 48%, rgb(122, 29, 0) 52%, /* You get to go back in time and see if you could stop 9/11 (About the whole "people make too many jokes about 9/11 thing" and the general comedy based on wars debate) */
+    rgb(43, 61, 221) 54%, rgb(43, 61, 221) 64%, /* See the Apple presentation in 2045 (It's mostly the same stuff) */
+    rgb(177, 58, 224) 66%, rgb(177, 58, 224) 82%, /* AI uprising (It's actually pretty chill, the AIs do all the work and let us just kinda hang) */
+    rgb(255, 0, 64) 84%, rgb(255, 0, 64) 90%, /* Last human */
+    rgb(255, 102, 0) 92%, rgb(255, 102, 0) 100% /* Explosion of the sun */
     );
     height: 0.5rem;
 }
@@ -95,11 +99,13 @@ h2 {
     width: 1rem;
 }
 
+.Location {
+    margin: 20px;
+    text-align: center;
+}
+
 .Location h1 {
-    color: rgb(255, 255, 255);
-    margin: 15px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    color: rgb(255, 255, 255);    
     font-size: 50px;
     text-align: center;
 }
@@ -107,8 +113,14 @@ h2 {
 .Location p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(184, 184, 184);
-    margin: 20px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 0px;
     font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 35%
+}
+
+.Location img {
+    width: 35%;
+    display: inline;
 }

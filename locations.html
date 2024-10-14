@@ -38,27 +38,80 @@
         const value = document.getElementById("slider").value;
 
         pages.forEach(page => {
-            if (value > page["start"] && value < page["end"]) {
+            if (value >= page["start"]) {
                 document.getElementById("Location header").innerHTML = page["header"];
                 document.getElementById("Location text").innerHTML = page["text"];
-                document.getElementById("Location header").innerHTML = page["header"];
+                document.getElementById("Location image").src = page["image"];
             }
         });
     }
 
     const pages = [
         {
-            "start": 0, 
-            "end": 50, 
-            "header": "Talking with a Caveman",
-            "text": "Caveman text"
-
+            "start": 0,
+            "header": "Big Bang",
+            "text": "Start",
+            "image": "Big Bang.jfif"
         },
         {
-            "start": 50, 
-            "end": 100, 
-            "header": "Roaming with the Dinosaurs",
-            "text": "Dinosaur text"
+            "start": 0.01, 
+            "header": "A conversation with the last Neanderthal",
+            "text": "Neanderthal text",
+            "image": "Caveman.jfif"
         },
+        {
+            "start": 9, 
+            "header": "Roaming with the Dinosaurs",
+            "text": "A centerpiece of a young child's varying obsessions, the dinosaurs have been a top destination for time travelers. Fun fact - The tyrannosaurus rex had over 60 6 inch long teeth and could bite with 6 tons of pressure! Apeture Science is not liable for any damages to property, young children, or legs during the extent of your trip.",
+            "image": "Dinosaur.jfif"
+        },
+        {
+            "start": 23, 
+            "header": "Meet Aristotle",
+            "text": "Aristotle text",
+            "image": "Dinosaur.jfif"
+        },
+        {
+            "start": 39, 
+            "header": "Salem Witch Trials",
+            "text": "Salem Witch text",
+            "image": "Dinosaur.jfif"
+        },
+        {
+            "start": 47, 
+            "header": "9/11",
+            "text": "9/11 text",
+            "image": "Dinosaur.jfif"
+        },
+        {
+            "start": 53, 
+            "header": "Apple event from 2045",
+            "text": "Apple text",
+            "image": "Dinosaur.jfif"
+        },
+        {
+            "start": 67, 
+            "header": "AI uprising",
+            "text": "AI text",
+            "image": "Dinosaur.jfif"
+        },
+        {
+            "start": 81, 
+            "header": "Last human",
+            "text": "Last human text",
+            "image": "Dinosaur.jfif"
+        },
+        {
+            "start": 91, 
+            "header": "Explosion of the sun",
+            "text": "Sun text",
+            "image": "Dinosaur.jfif"
+        },
+        {
+            "start": 100,
+            "header": "Heat death of the universe",
+            "text": "Bye bye",
+            "image": "Heat Death.jfif"
+        }
     ]
 </script>
